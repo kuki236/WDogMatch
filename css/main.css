@@ -102,3 +102,26 @@
  right: 0;
  width: 0;
 }
+#dog-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    justify-content: center;
+  }
+  #dog-gallery li {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+  }
+  #dog-gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
